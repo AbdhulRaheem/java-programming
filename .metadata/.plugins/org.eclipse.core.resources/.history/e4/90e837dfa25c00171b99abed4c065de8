@@ -1,0 +1,77 @@
+package Day2;
+
+class Designer{
+	
+	int expr;
+	float salary;
+	String name;
+	
+	/* Few things about constructor*/
+	/* 1. Name of constructor is same as name of class
+	 * 2. It is used to init & create objects
+	 * 3. Even if its not written, default constructor will be generated
+	 */
+	public Designer(int expr, float salary, String name) {
+		super();
+		this.expr = expr;
+		this.salary = salary;
+		this.name = name;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Designer [expr=" + expr + ", salary=" + salary + ", name=" + name + "]";
+	}
+	
+	/*Methods are the things done by or done to design objects*/
+	void doNewDesign(){
+		System.out.println(this.name + " Doing new design");
+	}
+	
+	void scrapOldDesign(){
+		System.out.println(this.name + " Scraping old design");
+	}
+	
+	
+	
+}
+
+
+public class UnderstandingClasses {
+
+	public static void main(String[] args) {
+		
+		/*
+		Designer d1 = new Designer();
+		d1.expr = 5;
+		d1.name = "Smitha";
+		d1.salary = 1212121212.0f;
+		
+		Designer d2 = new Designer();
+		d2.expr = 15;
+		d2.name = "abc";
+		d2.salary = 1212121212.0f;
+		*/
+		
+		Designer d1 = new Designer(5,910291029.0f,"abc");
+		Designer d2 = new Designer(15,91029441029.0f,"defabc");
+		
+		System.out.println(d1);
+		System.out.println(d2);
+		
+		d1.doNewDesign();
+		d2.scrapOldDesign();
+		
+		Designer d3 = new Designer(5,910291029.0f,"abc");
+		Designer d4 = new Designer(5,910291029.0f,"abc");
+		
+		if (d3 == d4){
+			System.out.println("They are same");
+		}
+		
+
+	}
+
+}

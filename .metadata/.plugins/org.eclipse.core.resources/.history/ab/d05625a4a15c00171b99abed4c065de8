@@ -1,0 +1,39 @@
+package Day2;
+
+class Designer{
+	
+	int expr;
+	float salary;
+	String name;
+	
+	@Override
+	public String toString() {
+		return "Designer [expr=" + expr + ", salary=" + salary + ", name=" + name + "]";
+	}
+	
+	
+	
+}
+
+
+public class UnderstandingClasses {
+
+	public static void main(String[] args) {
+		
+		Designer d1 = new Designer();
+		d1.expr = 5;
+		d1.name = "Smitha";
+		d1.salary = 1212121212.0f;
+		
+		Designer d2 = new Designer();
+		d2.expr = 15;
+		d2.name = "abc";
+		d2.salary = 1212121212.0f;
+		
+		
+		System.out.println(d1);
+		System.out.println(d2);
+
+	}
+
+}

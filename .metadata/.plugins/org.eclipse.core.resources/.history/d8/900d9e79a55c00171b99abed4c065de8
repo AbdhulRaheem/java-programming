@@ -1,0 +1,32 @@
+package Day2;
+
+/* 
+ * Three things that can be final - variable, function & class
+ * final var - you cannot change variable
+ * final function - you cannot override it
+ * final class - you cannot derive from it
+ */
+
+class Student{
+	final int age = 10;
+	void doStudy(){
+		System.out.println("In base class");
+	}
+}
+
+
+class GoodStudent extends Student{
+	void doStudy(){
+		
+	}
+}
+
+public class UnderstandingFinal {
+
+	public static void main(String[] args) {
+		Student s = new Student();
+		//s.age = 99;
+
+	}
+
+}
