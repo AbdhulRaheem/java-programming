@@ -1,0 +1,45 @@
+package Day3;
+
+class Human{
+	String name;
+	private int age;
+	String location;
+	
+	public Human(String name, int age, String location) {
+		this.name = name;
+		this.age = age;
+		this.location = location;
+	}
+	
+}
+
+class NewEmployee extends Human{
+	
+	String offc;
+	String designation;
+	
+	public NewEmployee(String name, int age, String location, String offc, String designation) {
+		super(name, age, location);
+		this.offc = offc;
+		this.designation = designation;
+	}
+
+	
+	
+}
+
+
+public class UnderstandingInheritance {
+
+	public static void main(String[] args) {
+		NewEmployee n = new NewEmployee("Awi",
+				                        33,
+				                        "Blr",
+				                        "Zeke",
+				                        "xyz");
+		
+		n.
+
+	}
+
+}

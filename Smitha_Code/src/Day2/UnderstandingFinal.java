@@ -7,6 +7,7 @@ package Day2;
  * final class - you cannot derive from it
  */
 
+
 class Student{
 	final int age = 10;
 	final void doStudy(){
